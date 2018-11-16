@@ -1,0 +1,21 @@
+.kikkare{
+
+    background-image: url(https://static.vecteezy.com/system/resources/previews/000/124/325/large_2x/free-vector-pink-glitter-texture.jpg);
+    background-color: rgba(255,255,255,0.6);
+    background-blend-mode: lighten;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    height: 100%;
+    background-size: cover;
+    min-height: 100vh;
+    display: flex;
+    font-family: Broadway;
+    color: purple;
+    text-shadow: 4px 4px 5px #EE34D2;
+    padding: 20px 0;
+    font-size: 30px;
+}
+.kikkare iframe{
+    width: 50%;
+    margin: 0 auto;
+}

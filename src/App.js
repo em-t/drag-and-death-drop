@@ -1,21 +1,19 @@
-import React, { Component } from 'react';
-import logo from './logo.png';
+import React from 'react';
+import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 import './App.css';
+import Front from "./Front";
+import GamePage from "./GamePage";
 
-class App extends Component {
-  render() {
-      return <div className="App">
-          <body className="App-header">
-              <div className="grid-container">
-                  <div className="lefttop"><img src={logo} className="logo" alt="logo" /></div>
-                  <div className="leftbottom">WELCOME TO THE RUPAUL'S DRAG AND DROP DEAD RACE!</div>
-                  <div className="middle"></div>
-                  <div className="righttop"><p>GENTLEMEN, START YOUR ENGINES, AND MAY THE BEST WOMAN WIN</p></div>
-                  <div className="rightbottom"></div>
-              </div>
-          </body>
-      </div>;
-  }
-}
+const App = appProps => (
+    <Router>
+        <div className="App">
+                <Switch>
+                    <Route exact name="Front" path="/" component={Front} />
+                    <Route exact name="GamePage" path="/gamepage" component={GamePage} />
+                </Switch>
+            <hr/>
+        </div>
+    </Router>
+);
 
 export default App;
