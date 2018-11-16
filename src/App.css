@@ -1,32 +1,69 @@
-.App {
-  text-align: center;
-}
+/*.App {*/
+  /*text-align: center;*/
+/*}*/
 
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
+.logo {
   height: 40vmin;
 }
 
 .App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+
 }
 
 .App-link {
-  color: #61dafb;
+  color: hotpink;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.lefttop { grid-area: lefttop;
+
+ }
+.leftbottom { grid-area: leftbottom;
+    text-align: center;
+    padding: 20px;
+    }
+.middle { grid-area: middle;
 }
+.righttop { grid-area: righttop;
+    text-align: center;
+    padding-right: 20px;
+
+}
+.righttop p {
+    padding-top: 75px;
+}
+.rightbottom { grid-area: rightbottom;
+
+}
+
+
+.grid-container {
+    display: grid;
+    grid-template-areas:
+            'lefttop middle righttop'
+            'leftbottom middle rightbottom';
+    grid-template-columns: 33.3% 33.3% 33.3%;
+    grid-template-rows: 18% 82%;
+    /*grid-gap: 5px;*/
+    background-color: transparent;
+    /*padding: 10px;*/
+}
+.grid-container > div {
+
+    background-image: url(https://i.kinja-img.com/gawker-media/image/upload/s--PRh_Siee--/c_scale,f_auto,fl_progressive,q_80,w_800/vdxvfoes0exvqn1mkwms.png);
+    background-color: rgba(255,255,255,0.6);
+    background-blend-mode: lighten;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    height: 100%;
+    background-size: cover;
+    min-height: 100vh;
+    display: flex;
+    font-family: Broadway;
+    color: purple;
+    text-shadow: 4px 4px 5px #EE34D2;
+    padding: 20px 0;
+    font-size: 30px;
+}
+
+
+
